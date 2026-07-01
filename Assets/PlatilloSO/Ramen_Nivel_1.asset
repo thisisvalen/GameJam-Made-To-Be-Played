@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c172202dfb6592044a3b0850096a9283, type: 3}
+  m_Name: Ramen_Nivel_1
+  m_EditorClassIdentifier: Assembly-CSharp::PlatilloSO
+  nombrePlatillo: Ramen
+  poolDeIngredientes:
+  - {fileID: 11400000, guid: 37c56faf3265ebe45b2feeedf11d9308, type: 2}
+  - {fileID: 11400000, guid: ac2b17b01fd415e45ab12b6077feb945, type: 2}
+  - {fileID: 11400000, guid: 082dbd09cfb9fe244bd1f4849d18b381, type: 2}
+  - {fileID: 11400000, guid: c5be708c71be4874d86dcfea805e8d7c, type: 2}
+  - {fileID: 11400000, guid: a34ed4123d163004d98c296e932bf6a7, type: 2}
