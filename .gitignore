@@ -105,3 +105,8 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+ProjectSettings/ShaderGraphSettings.asset
+Assets/MobileDependencyResolver.meta
+Assets/MobileDependencyResolver/Editor.meta
+Assets/MobileDependencyResolver/Editor/1.2.185.meta
+ProjectSettings/ShaderGraphSettings.asset
