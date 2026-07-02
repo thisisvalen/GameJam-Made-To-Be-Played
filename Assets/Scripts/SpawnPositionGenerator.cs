@@ -4,13 +4,12 @@ using UnityEngine;
 public class SpawnPositionGenerator : MonoBehaviour
 {
     /*
-    Genera un punto Vector3 aleatorio dentro de los límites. 
-    Si choca con otra posición, recalcula.
+    Genera un punto aleatorio dentro de los límites especificados. 
+    Si choca con otra posición, recalcula y hace spawn en otro lado.
     */
-
     public Vector3 GeneratePosition(Bounds dishBounds, List<Vector3> existingPositions, float minDistance)
     {
-        int maxIterations = 50; // Bucle de seguridad (Criterio de aceptación)
+        int maxIterations = 50; // Evita que se generen bucles infinitos
         int currentIteration = 0;
 
         Vector3 proposedPos = Vector3.zero;
@@ -18,7 +17,7 @@ public class SpawnPositionGenerator : MonoBehaviour
 
         while (currentIteration < maxIterations)
         {
-            // Generamos posiciones aleatorias en X y Z dentro de los límites del plato.
+            // Se generan posiciones aleatorias en X y Z dentro de los límites del plato.
             // Mantenemos Y constante (usando el centro del plato)
             float randomX = Random.Range(dishBounds.min.x, dishBounds.max.x);
             float randomZ = Random.Range(dishBounds.min.z, dishBounds.max.z);
